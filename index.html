@@ -5,86 +5,189 @@
       Calculator
     </title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <style>
+    
+      body {
+        margin: 0px;
+        font-size: 2em;
+      }
+      ul {
+        margin: 0px;
+        list-style-type: none;
+        padding: 0px;
+      }
+      
+      body > ul {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      
+      body > ul li {
+        height: 14.28%;
+      }
+
+      body > ul ul {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        float: left;
+      }
+
+      body > ul ul li {
+        display: block;
+        width: 25%;
+        height: 100%;
+        background-color: #eee;
+        border: 0px solid #555;
+        position: relative;
+        float: left;
+        border: 1px solid #555;
+        border-right:0px;
+        border-bottom:0px;
+        margin-left:-1px;
+      }
+      
+      button {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        font-size:100%;
+        font-family: "HelveticaNeue-UltraLight";
+        background-color: transparent;
+        padding: 0px;
+        border:0px;
+        outline-width: 0;
+      }
+      
+      li.dark-gray {
+        background-color: #ccc;
+      }
+      li.dark-gray:active {
+        background-color: #aaa;
+      }
+
+      li.orange {
+        background-color: orange;
+      }
+      li.orange:active {
+        background-color: darkorange;
+      }
+      
+      li.zero {
+        width: 50%;
+      }
+      li.zero button {
+        text-align: left;
+        padding-left:20%;
+      }
+      
+      li:active {
+        background: #ccc;
+      }
+      
+      body ul li.result {
+        background-color: #333;
+        text-align: right;
+        height: 28.56%;
+      }
+      
+      label {
+        font-size:200%;
+        font-family: "HelveticaNeue-UltraLight";
+        color: white;
+        padding-right: 10px;
+        position: absolute;
+        top:12%;
+        right:0px
+      }
+      
+
+
+    </style>
   </head>
   <body>
     <ul>
-      <li>
+      <li class="result">
         <label>123</label>
       </li>
       <li>
         <ul>
-          <li>
-            <button>AC</button>
+          <li class="dark-gray">
+            <button name="all clear">AC</button>
           </li>
-          <li>
-            <button>±</button>
+          <li class="dark-gray">
+            <button name="flip sign of result">±</button>
           </li>
-          <li>
-            <button>%</button>
+          <li class="dark-gray">
+            <button name="modulus">%</button>
           </li>
-          <li>
-            <button>÷</button>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ul>
-          <li>
-            <button>7</button>
-          </li>
-          <li>
-            <button>8</button>
-          </li>
-          <li>
-            <button>9</button>
-          </li>
-          <li>
-            <button>×</button>
+          <li class="orange">
+            <button name="divide">÷</button>
           </li>
         </ul>
       </li>
       <li>
         <ul>
           <li>
-            <button>4</button>
+            <button name="seven">7</button>
           </li>
           <li>
-            <button>5</button>
+            <button name="eight">8</button>
           </li>
           <li>
-            <button>6</button>
+            <button name="nine">9</button>
           </li>
-          <li>
-            <button>-</button>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ul>
-          <li>
-            <button>1</button>
-          </li>
-          <li>
-            <button>2</button>
-          </li>
-          <li>
-            <button>3</button>
-          </li>
-          <li>
-            <button>+</button>
+          <li class="orange">
+            <button name="multiply">×</button>
           </li>
         </ul>
       </li>
       <li>
         <ul>
           <li>
-            <button>0</button>
+            <button name="four">4</button>
           </li>
           <li>
-            <button>.</button>
+            <button name="five">5</button>
           </li>
           <li>
-            <button>=</button>
+            <button name="six">6</button>
+          </li>
+          <li class="orange">
+            <button name="minus">-</button>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li>
+            <button name="one">1</button>
+          </li>
+          <li>
+            <button name="two">2</button>
+          </li>
+          <li>
+            <button name="three">3</button>
+          </li>
+          <li class="orange">
+            <button name="plus">+</button>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li class="zero">
+            <button name="zero">0</button>
+          </li>
+          <li>
+            <button name="decimal"><strong>.</strong></button>
+          </li>
+          <li class="orange">
+            <button name="equals">=</button>
           </li>
         </ul>
       </li>
