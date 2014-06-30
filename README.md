@@ -8,4 +8,5 @@
 4. [Version 4 of CalculatorDemo using unordered list elements.](https://github.com/pbergstr/calculator-demo/blob/v4-using-unordered-lists/index.html) 
 5. [Version 5 of CalculatorDemo using an unordered list and basic styling](https://github.com/pbergstr/calculator-demo/blob/v5-using-unordered-list-and-basic-layout/index.html)
 6. [Version 6 of CalculatorDemo using unordered list and full CSS styling.](https://github.com/pbergstr/calculator-demo/blob/v6-unordered-list-with-full-styling/index.html) 
-6. [Version 7 of CalculatorDemo using LESS styling.](https://github.com/pbergstr/calculator-demo/blob/v7-move-to-less/index.html) 
+7. [Version 7 of CalculatorDemo using LESS styling.](https://github.com/pbergstr/calculator-demo/blob/v7-move-to-less/index.html) 
+8. [Version 8 of CalculatorDemo adding JavaScript.](https://github.com/pbergstr/calculator-demo/blob/v8-add-javascript.html) 
