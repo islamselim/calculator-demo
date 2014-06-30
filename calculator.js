@@ -6,34 +6,35 @@ var Calculator = {
   bValue: '',
   isEnteringAValue: true,
   maxValueLength: 8,
-  
   currentOperator: OP_NONE, 
 
   init: function(actionKey) {
     
-    var elms = document.getElementsByClassName('num');
-    for(var i=0, iLen=elms.length; i<iLen;i++) {
-      var elm = elms[i];
-      elm.onmousedown = function(event) {
-        Calculator.pushNumber(event.target.value);
-      }
-    }
+    var elms = $('.num');
     
-    elms =  document.getElementsByClassName('action');
-    for(var i=0, iLen=elms.length; i<iLen;i++) {
-      var elm = elms[i];
-      elm.onmousedown = function(event) {
-        Calculator.performAction(event.target.value);
-      }
-    }
+    $('.num').each(function(index) {
 
-    elms =  document.getElementsByClassName('op');
-    for(var i=0, iLen=elms.length; i<iLen;i++) {
-      var elm = elms[i];
-      elm.onmousedown = function(event) {
-        Calculator.addOperator(event.target.value);
-      }
-    }
+      $(this).click(function() {
+        Calculator.pushNumber($(this).val());
+      });
+
+    });
+    
+    $('.action').each(function(index) {
+
+      $(this).click(function() {
+        Calculator.performAction($(this).val());
+      });
+
+    });
+
+    $('.op').each(function(index) {
+
+      $(this).click(function() {
+        Calculator.addOperator($(this).val());
+      });
+
+    });
   },
   
   addOperator: function(op) {
@@ -136,8 +137,8 @@ var Calculator = {
     if(value == '') {
       value = '0';
     }
-
-    document.getElementsByTagName('label')[0].innerHTML = value;
+    
+    $('label').html(value);
   },
 
   reset: function() {
@@ -148,4 +149,7 @@ var Calculator = {
   }
 };
 
-Calculator.init();
+$(window).load(function() {
+  Calculator.init();
+});
+

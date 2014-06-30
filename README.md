@@ -11,4 +11,7 @@
 7. [Version 7 of CalculatorDemo using LESS styling.](https://github.com/pbergstr/calculator-demo/blob/v7-move-to-less/index.html) 
 8. [Version 8 of CalculatorDemo adding 
 JavaScript.](https://github.com/pbergstr/calculator-demo/blob/v8-add-javascript.html) 
-8. [Version 9 with better organized JavaScript.](https://github.com/pbergstr/calculator-demo/blob/v9-organize-javascript.html) 
+9. [Version 9 with better organized JavaScript.](https://github.com/pbergstr/calculator-demo/blob/v9-organize-javascript.html) 
+10. [Version 10 of CalculatoDemo using jQuery.](https://github.com/pbergstr/calculator-demo/blob/10-add-jquery.html) 
+
+
