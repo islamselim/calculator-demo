@@ -33,7 +33,7 @@ body ul ul li {
   display: block;
   width: 25%;
   height: 100%;
-  background-color: #eee;
+  background-color: #eeeeee;
   border: 0px solid #555;
   position: relative;
   float: left;
@@ -41,6 +41,28 @@ body ul ul li {
   border-right: 0px;
   border-bottom: 0px;
   margin-left: -1px;
+}
+body ul ul li:active {
+  background: #cccccc;
+}
+body ul ul li.action-button {
+  background-color: #cccccc;
+}
+body ul ul li.action-button:active {
+  background-color: #aaaaaa;
+}
+body ul ul li.op-button {
+  background-color: #ffa500;
+}
+body ul ul li.op-button:active {
+  background-color: opButtonColorActive;
+}
+body ul ul li.zero {
+  width: 50%;
+}
+body ul ul li.zero button {
+  text-align: left;
+  padding-left: 20%;
 }
 body ul ul li button {
   position: relative;
@@ -52,28 +74,6 @@ body ul ul li button {
   padding: 0px;
   border: 0px;
   outline-width: 0;
-}
-body ul ul li.dark-gray {
-  background-color: #ccc;
-}
-body ul ul li.dark-gray:active {
-  background-color: #aaa;
-}
-body ul ul li.orange {
-  background-color: orange;
-}
-body ul ul li.orange:active {
-  background-color: darkorange;
-}
-body ul ul li.zero {
-  width: 50%;
-}
-body ul ul li.zero button {
-  text-align: left;
-  padding-left: 20%;
-}
-body ul ul li:active {
-  background: #ccc;
 }
 body > ul {
   position: absolute;
