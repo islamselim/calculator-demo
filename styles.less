@@ -1,3 +1,17 @@
+
+@numberButtonColor: #eee;
+@numberButtonColorActive: #ccc;
+
+@actionButtonColor: #ccc;
+@actionButtonColorActive: #aaa;
+
+@opButtonColor: orange;
+@opButtonColorActive: darkorange;
+
+@resultHeight: 28.56%;
+@buttonHeight: 14.28%;
+
+
 body {
   margin: 0px;
   padding:0px;
@@ -11,7 +25,7 @@ body {
     li.result {
         background-color: #333;
         text-align: right;
-        height: 28.56%;
+        height: @resultHeight;
 
         label {
           font-size:200%;
@@ -35,7 +49,7 @@ body {
         display: block;
         width: 25%;
         height: 100%;
-        background-color: #eee;
+        background-color: @numberButtonColor;
         border: 0px solid #555;
         position: relative;
         float: left;
@@ -43,6 +57,34 @@ body {
         border-right:0px;
         border-bottom:0px;
         margin-left:-1px;
+        
+        
+        &:active {
+          background: @numberButtonColorActive;
+        }
+        
+        &.action-button {
+          background-color: @actionButtonColor;
+        }
+        &.action-button:active {
+          background-color: @actionButtonColorActive;
+        }
+
+        &.op-button {
+          background-color: @opButtonColor;
+        }
+
+        &.op-button:active {
+          background-color: opButtonColorActive;
+        }
+
+        &.zero {
+          width: 50%;
+          button {
+            text-align: left;
+            padding-left:20%;
+          }
+        }
         
         button {
           position: relative;
@@ -55,34 +97,6 @@ body {
           border:0px;
           outline-width: 0;
         }
-        
-        &.dark-gray {
-          background-color: #ccc;
-        }
-        &.dark-gray:active {
-          background-color: #aaa;
-        }
-
-        &.orange {
-          background-color: orange;
-        }
-
-        &.orange:active {
-          background-color: darkorange;
-        }
-
-        &.zero {
-          width: 50%;
-          button {
-            text-align: left;
-            padding-left:20%;
-          }
-        }
-        
-        &:active {
-          background: #ccc;
-          
-        }
       }
     }
   }
@@ -93,7 +107,7 @@ body {
     width: 100%;
 
     li {
-      height: 14.28%;
+      height: @buttonHeight;
     }
   }
 }
