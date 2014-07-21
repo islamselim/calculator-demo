@@ -13,5 +13,6 @@
 JavaScript.](https://github.com/pbergstr/calculator-demo/tree/v8-add-javascript) 
 9. [Version 9 with better organized JavaScript.](https://github.com/pbergstr/calculator-demo/tree/v9-organize-javascript) 
 10. [Version 10 of CalculatoDemo using jQuery.](https://github.com/pbergstr/calculator-demo/tree/10-add-jquery) 
+11. [Version 11 of CalculatoDemo using Ember and Ember-CLI.](https://github.com/pbergstr/calculator-demo/tree/11-ember) 
 
 
