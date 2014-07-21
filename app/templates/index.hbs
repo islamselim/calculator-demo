@@ -1,0 +1,82 @@
+<ul>
+  <li class="result">
+    <label>{{displayValue}}</label>
+  </li>
+  <li>
+    <ul>
+      <li class="dark-gray">
+        <button class="action" {{action 'performAction' 'all-clear'}}>AC</button>
+      </li>
+      <li class="dark-gray">
+        <button class="action" {{action 'performAction' 'flip-sign'}}>±</button>
+      </li>
+      <li class="dark-gray">
+        <button class="action" {{action 'performAction' 'modulus'}}>%</button>
+      </li>
+      <li class="orange">
+        <button class="op" {{action 'performOperation' 'divide'}}>÷</button>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <button class="num" {{action 'pushNumber' '7'}}">7</button>
+      </li>
+      <li>
+        <button class="num" {{action 'pushNumber' '8'}}>8</button>
+      </li>
+      <li>
+        <button class="num" {{action 'pushNumber' '9'}}>9</button>
+      </li>
+      <li class="orange">
+        <button class="op" {{action 'performOperation' 'multiply'}}>×</button>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <button class="num" {{action 'pushNumber' '4'}}>4</button>
+      </li>
+      <li>
+        <button class="num" {{action 'pushNumber' '5'}}>5</button>
+      </li>
+      <li>
+        <button class="num" {{action 'pushNumber' '6'}}>6</button>
+      </li>
+      <li class="orange">
+        <button class="op" {{action 'performOperation' 'minus'}}>-</button>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <button class="num" {{action 'pushNumber' '1'}}>1</button>
+      </li>     
+      <li>      
+        <button class="num" {{action 'pushNumber' '2'}}>2</button>
+      </li>     
+      <li>      
+        <button class="num" {{action 'pushNumber' '3'}}>3</button>
+      </li>
+      <li class="orange">
+        <button class="op" {{action 'performOperation' 'plus'}}>+</button>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li class="zero">
+        <button class="num" {{action 'pushNumber' '0'}}>0</button>
+      </li>
+      <li>
+        <button class="num" {{action 'pushNumber' '.'}}><strong>.</strong></button>
+      </li>
+      <li class="orange">
+        <button class="op" {{action 'performOperation' 'equals'}}>=</button>
+      </li>
+    </ul>
+  </li>
+ </ul>
