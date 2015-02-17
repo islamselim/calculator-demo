@@ -1,18 +1,53 @@
-# CalculatorDemo
-## Running example for COEN 268
+# Calculator-demo
 
-### Demo branches in order:
-1. [Version 1 of CalculatorDemo using a table and HTML entities](https://github.com/pbergstr/calculator-demo/tree/v1-table-with-entities)
-2. [Version 2 of CalculatorDemo using table and UTF-8 characters](https://github.com/pbergstr/calculator-demo/tree/v2-table-with-utf8-characters) 
-3. [Version 3 of CalculatorDemo using table, UTF-8 characters, and UTF-8 charset meta tag](https://github.com/pbergstr/calculator-demo/tree/v4-using-unordered-lists) 
-4. [Version 4 of CalculatorDemo using unordered list elements.](https://github.com/pbergstr/calculator-demo/tree/v4-using-unordered-lists) 
-5. [Version 5 of CalculatorDemo using an unordered list and basic styling](https://github.com/pbergstr/calculator-demo/tree/v5-using-unordered-list-and-basic-layout)
-6. [Version 6 of CalculatorDemo using unordered list and full CSS styling.](https://github.com/pbergstr/calculator-demo/tree/v6-unordered-list-with-full-styling) 
-7. [Version 7 of CalculatorDemo using LESS styling.](https://github.com/pbergstr/calculator-demo/tree/v7-move-to-less) 
-8. [Version 8 of CalculatorDemo adding 
-JavaScript.](https://github.com/pbergstr/calculator-demo/tree/v8-add-javascript) 
-9. [Version 9 with better organized JavaScript.](https://github.com/pbergstr/calculator-demo/tree/v9-organize-javascript) 
-10. [Version 10 of CalculatoDemo using jQuery.](https://github.com/pbergstr/calculator-demo/tree/10-add-jquery) 
-11. [Version 11 of CalculatoDemo using Ember and Ember-CLI.](https://github.com/pbergstr/calculator-demo/tree/11-ember) 
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
+## Prerequisites
+
+You will need the following things properly installed on your computer.
+
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM)
+* [Bower](http://bower.io/)
+* [Ember CLI](http://www.ember-cli.com/)
+* [PhantomJS](http://phantomjs.org/)
+
+## Installation
+
+* `git clone <repository-url>` this repository
+* change into the new directory
+* `npm install`
+* `bower install`
+
+## Running / Development
+
+* `ember server`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+
+### Code Generators
+
+Make use of the many generators for code, try `ember help generate` for more details
+
+### Running Tests
+
+* `ember test`
+* `ember test --server`
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
+* [ember.js](http://emberjs.com/)
+* [ember-cli](http://www.ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
